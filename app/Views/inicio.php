@@ -4,28 +4,7 @@
 <?= view('components/herosection') ?>
 
 <!-- Sección marketing: tres columnas -->
-<div class="container marketing py-5 px-3">
-  <div class="row justify-content-center text-center">
-    <div class="col-lg-4 mb-4 mx-auto">
-      <svg aria-label="Placeholder" class="bd-placeholder-img rounded-circle" height="140" width="140" xmlns="http://www.w3.org/2000/svg"><title>Penal</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-      <h2 class="fw-normal">Penal</h2>
-      <p>Defensa penal experta y asesoría en procesos judiciales.</p>
-      <p><a class="btn btn-secondary" href="<?= base_url('servicios/penal') ?>">Ver detalles &raquo;</a></p>
-    </div>
-    <div class="col-lg-4 mb-4 mx-auto">
-      <svg aria-label="Placeholder" class="bd-placeholder-img rounded-circle" height="140" width="140" xmlns="http://www.w3.org/2000/svg"><title>Civil</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-      <h2 class="fw-normal">Civil</h2>
-      <p>Soluciones legales en contratos, familia y sucesiones.</p>
-      <p><a class="btn btn-secondary" href="<?= base_url('servicios/civil') ?>">Ver detalles &raquo;</a></p>
-    </div>
-    <div class="col-lg-4 mb-4 mx-auto">
-      <svg aria-label="Placeholder" class="bd-placeholder-img rounded-circle" height="140" width="140" xmlns="http://www.w3.org/2000/svg"><title>Laboral</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-      <h2 class="fw-normal">Laboral</h2>
-      <p>Asesoría en derechos laborales y procesos de conciliación.</p>
-      <p><a class="btn btn-secondary" href="<?= base_url('servicios/laboral') ?>">Ver detalles &raquo;</a></p>
-    </div>
-  </div>
-</div>
+ <?= view('components/vistaServicios', ['servicios' => $servicios]) ?>
 
 <!-- Featurettes -->
 <hr class="featurette-divider">

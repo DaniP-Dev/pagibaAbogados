@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use App\Controllers\Servicios;
+
 class Home extends BaseController
 {
     public function index(): string
@@ -11,6 +13,11 @@ class Home extends BaseController
             'meta_description' => 'Bienvenido a Abogado Guerreros, expertos en defensa y asesoría legal.',
             'meta_keywords' => 'abogados, defensa, asesoría legal, guerreros',
         ];
+
+        // Obtener servicios del controlador Servicios
+        $serviciosController = new Servicios();
+        $data['servicios'] = $serviciosController->getServiciosArray();
+
         return view('inicio', $data);
     }
 

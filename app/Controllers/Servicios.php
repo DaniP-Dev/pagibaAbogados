@@ -5,7 +5,7 @@ use CodeIgniter\Controller;
 
 class Servicios extends Controller
 {
-    private function getServiciosArray()
+    public function getServiciosArray() // Cambiado a public
     {
         return [
             [
@@ -51,6 +51,94 @@ class Servicios extends Controller
                     'Procesos de sucesión y herencias',
                     'Defensa en demandas civiles',
                     'Solución de conflictos de propiedad',
+                ]
+            ],
+            [
+                'slug' => 'administrativo',
+                'titulo' => 'Derecho Administrativo',
+                'descripcion_corta' => 'Asesoría y defensa en procedimientos administrativos, licitaciones y recursos ante entidades públicas.',
+                'descripcion' => 'Asesoría y defensa en procedimientos administrativos, licitaciones, recursos ante entidades públicas y procesos sancionatorios. Representación ante autoridades administrativas y defensa de derechos frente al Estado.',
+                'meta_title' => 'Derecho Administrativo | Abogado Guerreros',
+                'meta_description' => 'Asesoría y defensa en derecho administrativo, licitaciones y recursos.',
+                'meta_keywords' => 'administrativo, derecho, abogados',
+                'imagen' => 'https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80',
+                'imagenes' => [
+                    'https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80',
+                ],
+                'precio' => 200000,
+                'rating' => 4.6,
+                'reviews' => 18,
+                'caracteristicas' => [
+                    'Defensa en procesos administrativos',
+                    'Asesoría en licitaciones',
+                    'Recursos ante entidades públicas',
+                    'Representación ante autoridades',
+                ]
+            ],
+            [
+                'slug' => 'comercial',
+                'titulo' => 'Derecho Comercial',
+                'descripcion_corta' => 'Constitución de empresas, sociedades, contratos mercantiles y litigios comerciales.',
+                'descripcion' => 'Constitución de empresas, sociedades, contratos mercantiles, litigios comerciales y asesoría en derecho empresarial. Acompañamiento en la creación y gestión de negocios.',
+                'meta_title' => 'Derecho Comercial | Abogado Guerreros',
+                'meta_description' => 'Asesoría en derecho comercial, sociedades y contratos mercantiles.',
+                'meta_keywords' => 'comercial, derecho, abogados',
+                'imagen' => 'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80',
+                'imagenes' => [
+                    'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80',
+                ],
+                'precio' => 220000,
+                'rating' => 4.7,
+                'reviews' => 20,
+                'caracteristicas' => [
+                    'Constitución de empresas y sociedades',
+                    'Contratos mercantiles',
+                    'Litigios comerciales',
+                    'Asesoría empresarial',
+                ]
+            ],
+            [
+                'slug' => 'familia',
+                'titulo' => 'Derecho de Familia',
+                'descripcion_corta' => 'Divorcios, custodias, alimentos, adopciones y procesos de familia.',
+                'descripcion' => 'Divorcios, custodias, alimentos, adopciones, procesos de familia y asesoría en conflictos familiares. Acompañamiento en procesos judiciales y extrajudiciales.',
+                'meta_title' => 'Derecho de Familia | Abogado Guerreros',
+                'meta_description' => 'Asesoría en derecho de familia: divorcios, custodias y más.',
+                'meta_keywords' => 'familia, derecho, abogados',
+                'imagen' => 'https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=crop&w=600&q=80',
+                'imagenes' => [
+                    'https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=crop&w=600&q=80',
+                ],
+                'precio' => 170000,
+                'rating' => 4.6,
+                'reviews' => 15,
+                'caracteristicas' => [
+                    'Divorcios y custodias',
+                    'Procesos de alimentos',
+                    'Adopciones',
+                    'Conflictos familiares',
+                ]
+            ],
+            [
+                'slug' => 'laboral',
+                'titulo' => 'Derecho Laboral',
+                'descripcion_corta' => 'Despidos, indemnizaciones, contratos laborales y asesoría a empleadores y empleados.',
+                'descripcion' => 'Despidos, indemnizaciones, contratos laborales, asesoría a empleadores y empleados, y representación en procesos laborales. Soluciones para conflictos de trabajo.',
+                'meta_title' => 'Derecho Laboral | Abogado Guerreros',
+                'meta_description' => 'Asesoría en derecho laboral para empresas y trabajadores.',
+                'meta_keywords' => 'laboral, derecho, abogados',
+                'imagen' => 'https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80',
+                'imagenes' => [
+                    'https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80',
+                ],
+                'precio' => 160000,
+                'rating' => 4.5,
+                'reviews' => 12,
+                'caracteristicas' => [
+                    'Despidos e indemnizaciones',
+                    'Contratos laborales',
+                    'Asesoría a empleadores y empleados',
+                    'Procesos laborales',
                 ]
             ],
         ];
