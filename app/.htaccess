@@ -1,0 +1,12 @@
+<IfModule authz_core_module>
+	Require all denied
+</IfModule>
+<IfModule !authz_core_module>
+	Deny from all
+</IfModule>
+
+# Bloquea acceso a archivos ocultos y sensibles
+<FilesMatch "^\.(htaccess|env|git|svn|DS_Store|idea|vscode|composer\.json|composer\.lock|phpunit\.xml)$">
+	Order allow,deny
+	Deny from all
+</FilesMatch>
