@@ -6,11 +6,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .hero-video-bg video {
     position: absolute;
     top: 0; left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     object-fit: cover;
     z-index: 1;
@@ -18,7 +21,7 @@
   .hero-overlay {
     position: absolute;
     top: 0; left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     background: rgba(20, 20, 20, 0.5);
     z-index: 2;
